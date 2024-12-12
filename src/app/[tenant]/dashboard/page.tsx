@@ -1,13 +1,13 @@
-interface PageProps {
-  params: { tenant: string }
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Tenant Dashboard'
 }
 
-const TenantDashboard = ({ params }: PageProps) => {
-  const { tenant } = params
-
+const TenantDashboard = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-4xl font-bold">Dashboard for {tenant}</h1>
+      <h1 className="text-4xl font-bold">Dashboard for Subdomain</h1>
     </div>
   )
 }
